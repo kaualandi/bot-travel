@@ -1,5 +1,6 @@
 import { ChatId, Client, Message } from '@open-wa/wa-automate';
 import { inject, injectable } from 'inversify';
+
 import { StepService } from '../shared/services/step-service';
 import { UserService } from '../shared/services/user-service';
 import { messages } from '../utils/messages';
@@ -84,7 +85,13 @@ export class StepManager {
     lastMessageTime: Date,
     client: Client
   ) {
-    const expireTime = parseInt(process.env.EXPIRE_TIME || '120000'); // Padrão: 2 minutos
+    const expireTime = parseInt(process.env.EXPIRE_TIME || '0'); // Em milissegundos
+    if (!expireTime) {
+      console.warn(
+        'EXPIRE_TIME não definido, não será aplicada expiração de sessão.'
+      );
+      return;
+    }
 
     setTimeout(async () => {
       try {

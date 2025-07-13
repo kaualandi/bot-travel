@@ -1,5 +1,6 @@
 import { ChatId, Message } from '@open-wa/wa-automate';
 import { injectable } from 'inversify';
+
 import { http } from '../../config/axios';
 import { User } from '../../core/models/user';
 

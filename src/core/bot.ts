@@ -1,5 +1,6 @@
 import { Client, create, Message, STATE } from '@open-wa/wa-automate';
 import { inject, injectable } from 'inversify';
+
 import { OptionsConfig } from '../config/wa-automate';
 import { StepManager } from './step-manager';
 
@@ -23,7 +24,7 @@ export class Bot {
       if (state === 'CONFLICT' || state === 'UNLAUNCHED') client.forceRefocus();
     });
 
-    client.onMessage(async (message: Message) => {
+    client.onAnyMessage(async (message: Message) => {
       console.log(
         '\x1b[1;36m[NOVA MENSAGEM]\x1b[0m',
         message.from,

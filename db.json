@@ -1,3 +1,49 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": "5521999222644@c.us",
+      "name": "Kauã Landi",
+      "step": 0,
+      "intervention": true,
+      "lastMessageTime": "2025-07-13T03:36:44.967Z"
+    }
+  ],
+  "messages": [
+    {
+      "chatId": "5521999222644@c.us",
+      "role": "user",
+      "content": "Cartão de crédito bradesco",
+      "id": 1
+    },
+    {
+      "chatId": "5521999222644@c.us",
+      "role": "assistant",
+      "content": "Cartões Bradesco disponíveis:\n1️⃣ Bradesco ELO Mais Internacional\n2️⃣ Bradesco ELO Grafite\n3️⃣ Bradesco Like Visa\n4️⃣ Bradesco Neo Visa \n5️⃣ Bradesco GOL Smiles  \n\nQual você quer saber mais? 🔍",
+      "id": 2
+    },
+    {
+      "chatId": "5521999222644@c.us",
+      "role": "user",
+      "content": "Cartões Bradesco disponíveis:\n1️⃣ Bradesco ELO Mais Internacional\n2️⃣ Bradesco ELO Grafite\n3️⃣ Bradesco Like Visa\n4️⃣ Bradesco Neo Visa \n5️⃣ Bradesco GOL Smiles  \n\nQual você quer saber mais? 🔍",
+      "id": 3
+    },
+    {
+      "chatId": "5521999222644@c.us",
+      "role": "assistant",
+      "content": "\"Qual desses cartões Bradesco você quer mais detalhes? 🔍\"",
+      "id": 4
+    },
+    {
+      "chatId": "5521999222644@c.us",
+      "role": "user",
+      "content": "\"Qual desses cartões Bradesco você quer mais detalhes? 🔍\"",
+      "id": 5
+    },
+    {
+      "chatId": "5521999222644@c.us",
+      "role": "assistant",
+      "content": "Qualquer um desses cartões Bradesco que você procurar, estou aqui para ajudar! 🏦💳 Qual deles você gostaria de mais detalhes?",
+      "id": 6
+    }
+  ]
 }
