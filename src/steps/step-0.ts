@@ -16,7 +16,7 @@ export class Step0 implements OnInit {
   async onInit(client: Client, message: Message): Promise<number> {
     const { from, body } = message;
     const { data: messages } =
-      await this.messageService.getMessagesByChatId(from);
+      await this.messageService.getLast5MessagesByChatId(from);
     const gptResponse = await this.chatGPTService.getAnswerToQuestion(
       body,
       messages || []
